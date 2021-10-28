@@ -1,0 +1,24 @@
+---
+server :
+  port : 8888
+security :
+    basic :
+      enabled : true
+    user :
+      name : aboubakar
+      password : aboubakar
+spring :
+    cloud:
+      config:
+        server:
+          git:
+            uri : https://github.com/Sya006/spring-cloud-wa-tools
+            search-paths :
+              - 'station*'
+            repos :
+              perf :
+                pattern :
+                  "*/perf"
+                uri : https://github.com/Sya006/spring-cloudconfig-wa-tolls-perf
+                search-paths :
+                  - 'station*'
