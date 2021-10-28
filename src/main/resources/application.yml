@@ -1,12 +1,6 @@
 ---
 server :
   port : 8888
-security :
-    basic :
-      enabled : true
-    user :
-      name : aboubakar
-      password : aboubakar
 spring :
     cloud:
       config:
